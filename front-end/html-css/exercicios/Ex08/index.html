@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head>
+        <title>Cook Style</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor">
+        <meta name="keywords" content="html5, tecnologia">
+        
+       <style>
+        body{
+    font-family: arial, sans-serif;
+    background: #ccc;
+    
+}
+
+.hero{
+    background-image: url(/front-end/html-css/exercicios/Ex08/images/padoca.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;   
+    border-top: 1px solid transparent;
+    
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+    
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px gray;
+   
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+
+.hero nav li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+    
+.hero nav a{
+    background: rgba(0,0,0, 0.3);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+
+.hero nav a:hover{
+    background: rgba(0,0,0, 0.5);
+}
+    
+main{
+    width: 80%;
+    margin: auto;
+    
+}
+    
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 1%
+}
+
+.card-1, .card-2{
+    margin right: 2%;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+    filter:blur(3px)
+}
+
+.card img:hover{
+    filter: none;
+}
+
+.card p{
+    background-color:darkslategray;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.content-header{
+    border-bottom: solid 2px #ccc;
+    padding: 10px;
+}
+
+.content-header h2{
+    margin: 0;
+}
+
+.rodape{
+    height: 60px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background: gray;
+    line-height: 60px;
+}
+
+.maps{
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+}
+
+.maps iframe{
+    width: 100%;
+}
+       </style>
+        
+    </head>
+    <body>
+        
+        <div>
+            <header class="hero">
+                <nav>
+                    <ul>
+                        <li><a href="/front-end/html-css/exercicios/Ex08/historia.html" target="_blank">História</a></li>
+                        <li><a href="/front-end/html-css/exercicios/Ex08/menu.html" target="_blank">Menu</a></li>
+                        <li><a href="/front-end/html-css/exercicios/Ex08/contato.html" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            
+            <main>
+                
+                <section class="content-section">
+                    <div class="card card-1">
+                        <img src="/front-end/html-css/exercicios/Ex08/images/pao4.jpeg" alt="">
+                        <p>PANIFICAÇÃO</p>
+                    </div>
+                    
+                    <div class="card card-2">
+                        <img src="/front-end/html-css/exercicios/Ex08/images/massa1.jpg" alt="">
+                        <p>MASSAS</p>
+                    </div>
+                    
+                    <div class="card card-3">
+                        <img src="/front-end/html-css/exercicios/Ex08/images/doce1.jpg" alt="">
+                        <p>CONFEITARIA</p>
+                    </div>
+                </section>
+                
+                <section>
+                    <article>
+                        <div class="maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28060.99318022193!2d-52.81692025!3d-28.46074435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493c92d28c8f%3A0x6ff21ca741cec0c8!2sN%C3%A3o-Me-Toque%2C%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1653060895207!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>          
+                    </article>
+                </section>
+                
+            </main>
+            
+            <footer class="rodape">
+                
+                <p>Copyright &copy; 2022</p>
+                
+            </footer>
+        </div>
+        
+    </body>
+</html>
