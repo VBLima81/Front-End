@@ -1,0 +1,324 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f5f5f5; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    display: block;
+    float: left;
+    padding: 0;
+    max-width: 98%;
+    width: 98%;
+    margin: 0 auto;
+    max-width: 1198px;
+}
+
+header {
+    background: #fff;
+    display: block;
+    float: left;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #254159;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #254159;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #254159;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #254159;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #385874;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse form,
+.cognito.c-med .c-forms-form,
+.cognito.c-med .c-forms-form div {
+    background-color: #b8c8d6 !important;
+}
+
+#tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
+#tenho-interesse .cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
+    color: #385874;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+ol li {
+    font-size: 1.4rem;
+    color: #454545;
+}
+
+section {
+    background-color: rgb(224, 222, 222);
+    display: block;
+    float: left;
+    font-size: 1.5rem; /* equivalente a 15px */ 
+    padding: 20px;
+    width: 100%;
+}
+
+section nav {
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+nav li {
+    background-color: #10743d;
+    margin: 1px 20px 1px 0;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 35px;
+}
+
+nav li:hover {
+    background-color: #599472;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+nav a:hover {
+    color: #254159;
+}
+
+section article {
+    display: block;
+    float: left;
+    width: 70%;
+}
+
+
+h1::before {
+    display: block;
+  }
+  
+  h2::before {
+    display: block;
+  }
+  
+  .form {
+    width: 98%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
+    width: 100%;
+  }
+  
+  .form label {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+  }
+  
+  .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+  }
+  
+  .form button {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background: #09d;
+  }
+
+  footer {
+    background-color: #254159;  
+    display: block;
+    float: left;
+    padding: 20px 20px;
+    width: 98%;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+footer small {
+    font-size: 80%;
+    display: block;
+}
+
+.cognito {
+    height: 350px !important;
+    overflow: hidden !important;
+}
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }  
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+#banner {
+    background-image: url(/images/planta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+}
+
+.legenda-container {
+    width: 30vw;
+    float: right;
+    margin: 10vh 10vh 0 0;
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.legenda h5,
+.legenda h4 {
+    color: #254159;
+}
+
+.button-cta {
+    border-radius: 25px;
+    display: inline;
+    background-color: #09d;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px #454545;
+    padding: 10px 15px;
+    width: auto;
+    float: right;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.saiba-mais {
+    background-color: #b8c8d6;
+    padding: 40px 20px;
+}
+
+#saiba-mais p,
+#saiba-mais img {
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+#perguntas-frequentes {
+    background-color: #e9e6e6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #254159;
+    margin-bottom: 5px;
+    
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

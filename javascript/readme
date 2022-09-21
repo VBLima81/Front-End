@@ -1,0 +1,94 @@
+## Cálculo média de aluno
+
+var nota1 = 10;
+var nota2 = 8;
+var nota3 = 9;
+var nota4 = 7;
+var media = (nota1 + nota2 + nota3 + nota4) / 4;
+if(media >= 8) {
+    console.log("Aluno aprovado")
+} else {
+    console.log("Aluno em recuperação")
+}
+
+## Laços de repetição
+
+// fazer a revisão do carro aos 10km
+var km;
+var revisao = 3;
+
+for( km = 0; km < revisao; km++ ){
+    console.log("pode rodar");
+}
+
+## Cálculo de média de alunos
+
+var alunos = [
+    [6, 7, 8, 6],
+    [8, 5, 6, 8],
+    [10, 6, 8, 7]
+]
+
+var nota = 0;
+for (var i = 0; i < alunos.lenght; i++){
+
+    nota = 0
+    aluno = alunos[i]
+    console.log("Aluno: " aluno);
+
+    for (c = 0; c < alunos.lenght; c++){
+        nota += aluno[c];
+        }
+
+        media = nota / 4;
+
+        if(media >= 7) {
+            resultado = "aprovado";
+        } else {
+            resultado = "reprovado";
+        }
+
+        console.log("Media: " + media + " - " + resultado;)
+
+
+}
+
+## Funções
+
+- evitar a repetição de código
+- realizar chamadas dinânimicas de algoritimos
+
+function calcularMedia( notas) {
+
+    let soma = 0;
+for( c = 0; c < notas.length; c++) {
+    soma += notas[c];
+}
+
+media = soma / notas.length;
+
+return media;
+
+}
+
+function aprovacao ( notas ) {
+
+		let media = calcularMedia( notas);
+    let condicao = media >= 8 ? "aprovado" : "reprovado";
+
+    return "Média: " + media + " - Resultado: " + condicao;
+
+}
+
+// console.log()
+
+//console.log("Média: " + calcularMedia([8, 8]))
+//console.log( aprovacao ( calcularMedia([8, 8]))
+console.log( aprovacao([8, 8, 7]));
+
+//console.log("Média: " + calcularMedia([8, 8, 10]))
+//console.log( aprovacao ( calcularMedia([8, 8, 10]))
+console.log( aprovacao([8, 8, 10, 6]));
+
+//console.log("Média: " + calcularMedia([9, 6]))
+//console.log( aprovacao ( calcularMedia([9, 6]))

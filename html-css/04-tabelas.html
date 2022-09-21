@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuário a versão do html q deve ser reenderizada-->
+<html lang="pt-br">
+
+<head>
+
+    <title>Tabelas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Lima">
+   
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+        </tr>
+        </thead>
+        <tbody><!--tag ñ obrigatória-->
+            <tr align="center">
+                <td>1A</td>
+                <td>1B</td>
+                <td>1C</td>
+            </tr>
+            <tr align="right">
+                <td>2A</td>
+                <td>2B</td>
+                <td>2C</td>
+            </tr>
+            <tr>
+                <td>3A</td>
+                <td colspan="2">3B</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr align="center">
+                <td colspan="3">Rodapé da Tabela</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h2>Tabela como Layout</h2>
+
+    <table border="0" width="600">
+        <tr height="90">
+            <td colspan="4" bgcolor="#bbccee" align="center">Cabeçalho</td>
+        </tr>
+        <tr height="300">
+            <td width="20" bgcolor="#0000ff"></td>
+            <td width="60%" bgcolor="#eeeeee">
+                <h2>Primeira Tabela</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate tempore ullam aliquid asperiores eligendi labore harum unde totam quia distinctio, magnam officia voluptas ab architecto eveniet! Fugit, natus ut.</p>
+            </td>
+            <td bgcolor="#dddddd">Coluna 2</td>
+            <td width="20" bgcolor="#0000ff"></td>
+        </tr>
+        <tr>
+            <td colspan="4" bgcolor="gray" align="center">Rodapé</td>
+        </tr>
+    </table>
+
+</body>
+</html>
