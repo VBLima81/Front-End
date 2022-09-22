@@ -75,9 +75,10 @@ Callback
 getElementById()
 getElementsByTagName()
 getElementsByName()
-getElementsByClassName()
+getElementsByClassName() 
 querySelectorAll() // #id | .class
-Formulários
+
+## Formulários
 Precisamos evitar que o usuário passe dados incorretos
 Ou seja, para direcionar melhor o uso do nosso sistema
 Proteger a injeção de código malicioso
