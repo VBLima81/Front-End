@@ -1,165 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/custom.css">
     <title>Document</title>
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
 
-</head>
-<body>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+  </head>
+  <body>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col">
-                     <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      <div class="container"> 
+        <img id="logo" alt="logo" width="110" height="40" src="https://ebaconline.com.br/_nuxt/d58908d198123d3c50c18638f58abb26.svg" class="not-lazy">
+      </div>
     </header>
 
-    <section id="sobre">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 col-sm-12">
-                <h2>Sobre Nós</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptates, iste consectetur vero qui rem animi! Pariatur illo hic sit ea, aut fugiat commodi autem asperiores et velit at est!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptates, iste consectetur vero qui rem animi! Pariatur illo hic sit ea, aut fugiat commodi autem asperiores et velit at est!</p>
-                <a class="btn btn-lg btn-success">Botão</a>
-            </div>
-            <div class="col-md-5 col-sm-12">
-                <img src="./images/foto.jpg" alt="Exemplo" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    </section>     
-
-    <section id="produtos">
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <h2>Produtos</h2>
-
-                    <div class="card">
-                        <img src="./images/foto.jpg" alt="Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Produtos</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/foto.jpg" alt="Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Produtos</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <a class="btn btn-primary" href="produto-2">Ver produto</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/foto.jpg" alt="Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Produtos</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            <a class="btn btn-primary" href="produto-3">Ver produto</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos para reber uma cotação!</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form class="form">
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
-                        </div>
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
-                        </div>
-
-                        <div class="input-group">
-                           <textarea class="form-control" name="" rows="5"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>    
-    </section>
-
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                    <div class="modal-body">
-                        <h6>Confira o tamanho e os preços</h6>
-
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                <th>Tamaho</th>
-                                <th>Valor</th>
-                            </tr> 
-                            </thead>
-                           
-                            <tbody>
-                               <tr>
-                                <td>P</td>
-                                <td>R$100</td>
-                            </tr>
-
-                            <tr>
-                                <td>M</td>
-                                <td>R$200</td>
-                            </tr>
-
-                            <tr>
-                                <td>G</td>
-                                <td>R$300</td>
-                            </tr> 
-                            </tbody>
-                        </table>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-            </div>
-        </div>
-    </div>
     
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+    
+    <section class="container">
+
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./images/pexels-luis-gomes-546819.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/pexels-marta-branco-1194713.jpg" alt="Foto de Marta Branco no Pexels">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h1>Marcelo </h1>
+          <h6>Tech lead - Dasa / Professo - EBAC</h6>
+          <p>Desenvolvedor Web desde 2008, com vasta experiência em projetos de internet, incluindo dispositivos móveis, marketing e performance digital. Já trabalhou em empresas como UOL, Valor Econômico, Editora Abril e PagSeguro, além de prestar consultoria para diversas marcas nacionais e multinacionais. Ele tem vasta experiência com React, JavaScript, HTML5, SASS, Node.js, Vue.js, Next.js, Laravel, typescript e nest.js</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img src="./images/pexels-marta-branco-1194713.jpg" alt="Foto de Marta Branco no Pexels">
+        </div>
+      </div>
+
+      <h2>Habilidades</h2>
+      <div class="row">
+        <div class="col">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <h2>Formação</h2>
+      <div class="row">
+        <div class="col">
+          <div class="accordion" id="meuacordeon">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Publicidade
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#meuacordeon">
+                <div class="accordion-body">
+                  <p>Trabalho com grid, componentes...</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne"> 
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Sistemas de Informação
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#meuacordeon">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta veniam quibusdam eligendi? Quis, eum? Mollitia molestias facilis ut sint? Voluptas commodi quisquam itaque numquam nostrum praesentium ab mollitia dolorum.</p>
+                  
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p class="text-center">&copy; 2021 - Desenvolvido por Marcelo</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+      console.log('hello world')
+    </script>
+  </body>
 </html>
